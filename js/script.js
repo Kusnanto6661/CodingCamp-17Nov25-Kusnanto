@@ -28,7 +28,7 @@ function displayCurrentDateTime() {
 function setWelcomeMessage(name = "User") {
     const welcomeElement = document.getElementById('welcome-message');
     if (welcomeElement) {
-        welcomeElement.textContent = `Selamat Datang di Website Topi Jerami ${name}`;
+        welcomeElement.textContent = `Halo ${name}Selamat Datang di Website Topi Jerami Kusnanto`;
     }
 }
 
