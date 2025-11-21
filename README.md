@@ -6,7 +6,7 @@ Proyek ini adalah implementasi *mini project* website perusahaan fiktif yang dib
 
 Proyek ini sudah di-deploy menggunakan GitHub Pages dan dapat diakses melalui link berikut:
 
-[PASTIKAN LINK INI DIISI SETELAH GITHUB PAGES JADI]
+https://kusnanto6661.github.io/CodingCamp-17Nov25-Kusnanto/
 
 ## 💡 Konsep dan Branding
 
