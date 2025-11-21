@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
              // Simpan nama di local storage agar tidak ditanyakan lagi
              localStorage.setItem('userName', userName);
         } else {
-             userName = "Harti"; // Default nama jika dibatalkan/kosong
+             userName = "Nakama"; // Default nama jika dibatalkan/kosong
         }
     }
     
