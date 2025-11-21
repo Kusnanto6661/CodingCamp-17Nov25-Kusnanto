@@ -1,0 +1,333 @@
+/* css/style.css */
+
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #fafafa;
+    color: #333;
+}
+
+/* Container utama untuk membatasi lebar konten */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-top: 20px;
+}
+
+/* Styling Navbar */
+header {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.logo span {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+}
+
+.navbar-logo {
+    height: 40px; /* Sesuaikan tinggi logo Anda */
+    width: 40px; 
+    max-width: 150px; 
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin-right: 10px; 
+}
+
+.footer-logo {
+    height: 25px; 
+    width: auto25px;
+    vertical-align: middle; 
+    margin-left: 5px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #eee;
+    border-color: #ccc;
+}
+
+/* Styling Welcome Banner */
+.welcome-banner {
+    text-align: left;
+    padding: 40px 0;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 40px;
+}
+
+.welcome-banner h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.welcome-banner p {
+    margin-bottom: 20px;
+}
+
+.banner-placeholder {
+    width: 100%;
+    max-width: 1000px;
+    height: 500px;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #555;
+    font-style: italic;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.banner-placeholder img.banner-image {
+    width: 100%;  /* Gambar mengisi lebar placeholder */
+    height: 100%; /* Gambar mengisi tinggi placeholder */
+    object-fit: cover; /* Penting untuk menjaga rasio aspek dan mengisi area */
+    display: block; /* Menghilangkan margin bawah bawaan img */
+}
+
+/* Styling Our Headquarter */
+.headquarter-section {
+    padding: 40px 0;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 40px;
+}
+
+.headquarters-list {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.headquarter-item {
+    text-align: center;
+}
+
+/* Styling Lingkaran Headquarter */
+.headquarter-section {
+    padding: 20px;
+    margin-bottom: 40px;
+    background-color: #f8f8f8; /* Sedikit pembeda latar belakang */
+}
+
+.headquarters-list {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.headquarter-item .circle {
+    width: 150px;
+    height: 150px;
+    border: 3px solid #1a73e8; /* Biru terang untuk batas */
+    border-radius: 50%; /* Membuatnya benar-benar bulat */
+    background-color: #e8f0fe; /* Latar belakang biru muda */
+    margin: 0 auto 15px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #1a73e8; /* Warna teks di dalam lingkaran */
+    transition: transform 0.3s ease-in-out, background-color 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan untuk efek 3D */
+}
+
+/* Styling Message Us Form */
+.message-us-section {
+    padding: 40px 0;
+}
+
+.form-container {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap; /* Untuk responsif */
+}
+
+#messageForm {
+    flex: 2; /* Form mengambil ruang lebih banyak */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.form-group {
+    flex: 1 1 calc(50% - 15px); /* Dua kolom per baris */
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group.full-width {
+    flex: 1 1 100%; /* Satu kolom penuh untuk Pesan */
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#messageForm button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+#messageForm button:hover {
+    background-color: #555;
+}
+
+/* Info dan Output Container */
+.info-output-container {
+    flex: 1; /* Info mengambil sisa ruang */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.current-info-box,
+.output-data-box {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 15px;
+}
+
+.current-info-box h3,
+.output-data-box h3 {
+    margin-top: 0;
+    font-size: 18px;
+    border-bottom: 1px dashed #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+#output-data p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+/* Styling Footer */
+footer {
+    text-align: right;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+/* css/style.css - tambahkan di bagian paling bawah */
+
+/* Responsive Design untuk layar di bawah 768px (Mobile) */
+@media (max-width: 768px) {
+    
+    /* Navbar stack */
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+        align-items: center; /* Rata tengah di mobile */
+    }
+
+    .nav-links li {
+        margin: 5px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links a {
+        display: block;
+        width: 100%;
+    }
+
+    /* Headquarter stack */
+    .headquarters-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .headquarter-item {
+        margin-bottom: 20px;
+    }
+
+    /* Form stack */
+    .form-container {
+        flex-direction: column; /* Mengubah tata letak menjadi vertikal */
+    }
+
+    /* Form group stack */
+    .form-group {
+        flex: 1 1 100%; /* Semua input menjadi 1 kolom penuh */
+    }
+
+    .form-group.full-width {
+        flex: 1 1 100%;
+    }
+
+    /* Output Info Box stack */
+    .info-output-container {
+        order: -1; /* Pindahkan info ke atas form di mobile (opsional, tapi sering dilakukan) */
+    }
+}
