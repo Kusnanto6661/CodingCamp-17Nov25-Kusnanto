@@ -11,7 +11,7 @@ Proyek ini dirancang agar siap dihubungkan ke Backend sesungguhnya (misalnya Nod
 
 | Kategori | Tautan |
 | :--- | :--- |
-| **Live Demo (GitHub Pages)** |(https://kusnanto6661.github.io/CodingCamp-17Nov25-Kusnanto/) |
+| **Live Demo (GitHub Pages)** | https://kusnanto6661.github.io/CodingCamp-17Nov25-Kusnanto/ |
 | **Repository GitHub** | [https://github.com/Kusnanto6661/CodingCamp-17Nov25-Kusnanto](https://github.com/Kusnanto6661/CodingCamp-17Nov25-Kusnanto) |
 
 ## 🌟 Fitur Utama & Highlight Teknis
