@@ -14,10 +14,12 @@
             </div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="profile.html">Our Profile</a></li> <li><a href="#">Portfolio</a></li>
-                <li><a href="#message-us">Message Us</a></li> </ul>
+                <li><a href="profile.html">Our Profile</a></li> 
+                <li><a href="profile.html#portofolio">Portfolio</a></li> <li><a href="#message-us">Message Us</a></li> 
+            </ul>
         </nav>
     </header>
+
     <main>
         <section class="welcome-banner">
             <h1 id="welcome-message"></h1>
@@ -27,88 +29,108 @@
             </div>
         </section>
     
-        </main>
-            <section class="headquarter-section">
-                <h2>Our Headquarter</h2>
-                <div class="headquarters-list">
-                    <div class="headquarter-item">
-                        <div class="circle"></div> <p>East Blue</p>
+        <section class="headquarter-section">
+            <h2>Our Headquarter</h2>
+            <div class="headquarters-list">
+                <div class="headquarter-item">
+                    <div class="circle"></div> <p>East Blue</p>
+                </div>
+                <div class="headquarter-item">
+                    <div class="circle"></div>
+                    <p>Grand Line</p>
+                </div>
+                <div class="headquarter-item">
+                    <div class="circle"></div>
+                    <p>New World</p>
+                </div>
+            </div>
+        </section>
+            
+        <section id="message-us" class="message-us-section">
+            <h2>Message Us</h2>
+            <div class="form-container">
+                <form id="messageForm">
+                    <div class="form-group">
+                        <label for="input-nama">Nama</label>
+                        <input type="text" id="input-nama" name="name" required>
                     </div>
-                    <div class="headquarter-item">
-                        <div class="circle"></div>
-                        <p>Grand Line</p>
+    
+                    <div class="form-group">
+                        <label for="input-email">Email</label>
+                        <input type="text" id="input-email" name="email" required>
                     </div>
-                    <div class="headquarter-item">
-                        <div class="circle"></div>
-                        <p>New World</p>
+                    <div class="form-group">
+                        <label for="input-phone">Nomor Telepon</label>
+                        <input type="tel" id="input-phone" name="phone" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="input-dob">Tanggal Lahir</label>
+                        <input type="date" id="input-dob" name="dob" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="input-gender">Jenis Kelamin</label>
+                        <select id="input-gender" name="gender" required>
+                            <option value="">-- Pilih --</option>
+                            <option value="Laki-Laki">Laki-Laki</option>
+                            <option value="Perempuan">Perempuan</option>
+                        </select>
+                    </div>
+    
+                    <div class="form-group full-width">
+                        <label for="input-message">Pesan</label>
+                        <textarea id="input-message" name="message" rows="5" required></textarea>
+                    </div>
+    
+                    <button type="submit">Submit</button>
+                </form>
+                <div class="info-output-container">
+                    <div class="current-info-box">
+                        <h3>Current Date & Time</h3>
+                        <p id="current-date-time"></p>
+                    </div>
+    
+                    <div class="output-data-box">
+                        <h3>Last Message Submitted</h3>
+                        <div id="output-data">
+                            <p><strong>Nama:</strong> -</p>
+                            <p><strong>Email:</strong> -</p>
+                            <p><strong>Nomor Telepon:</strong> -</p>
+                            <p><strong>Tanggal Lahir:</strong> -</p>
+                            <p><strong>Jenis Kelamin:</strong> -</p>
+                            <p><strong>Pesan:</strong> -</p>
+                        </div>
                     </div>
                 </div>
-            </section>
-            <section id="message-us" class="message-us-section">
-                <h2>Message Us</h2>
-                <div class="form-container">
-                    <form id="messageForm">
-                        <div class="form-group">
-                            <label for="input-nama">Nama</label>
-                            <input type="text" id="input-nama" name="name" required>
-                        </div>
-        
-                        <div class="form-group">
-                            <label for="input-email">Email</label>
-                            <input type="text" id="input-email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="input-phone">Nomor Telepon</label>
-                            <input type="tel" id="input-phone" name="phone" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="input-dob">Tanggal Lahir</label>
-                            <input type="date" id="input-dob" name="dob" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="input-gender">Jenis Kelamin</label>
-                            <select id="input-gender" name="gender" required>
-                                <option value="">-- Pilih --</option>
-                                <option value="Laki-Laki">Laki-Laki</option>
-                                <option value="Perempuan">Perempuan</option>
-                            </select>
-                        </div>
-        
-                        <div class="form-group full-width">
-                            <label for="input-message">Pesan</label>
-                            <textarea id="input-message" name="message" rows="5" required></textarea>
-                        </div>
-        
-                        <button type="submit">Submit</button>
-                    </form>
-                    <div class="info-output-container">
-                        <div class="current-info-box">
-                            <h3>Current Date & Time</h3>
-                            <p id="current-date-time"></p>
-                        </div>
-        
-                        <div class="output-data-box">
-                            <h3>Last Message Submitted</h3>
-                            <div id="output-data">
-                                <p><strong>Nama:</strong> -</p>
-                                <p><strong>Email:</strong> -</p>
-                                <p><strong>Nomor Telepon:</strong> -</p>
-                                <p><strong>Tanggal Lahir:</strong> -</p>
-                                <p><strong>Jenis Kelamin:</strong> -</p>
-                                <p><strong>Pesan:</strong> -</p>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-            </section>
-        </main>
+            </div>
+        </section>
             
-        <footer>
-            <p>Created By Kusnanto
-                  <img src="img/logo-perusahaan.png" alt="Logo Perusahaan S & C" class="footer-logo"></p>
-        </footer>
+        <section class="todo-app-section">
+            <h2>Daftar Tugas Nakama ⚓</h2>
+            <p>Data tersimpan otomatis di browser (localStorage).</p>
+            
+            <div class="input-container">
+                <input type="text" id="task-input" placeholder="Apa tugas baru Anda?" aria-label="Masukkan Tugas Baru">
+                <button id="add-task-button">Tambah Tugas</button>
+            </div>
+            
+            <ul id="task-list">
+            </ul>
+        </section>
+            
+        <section class="api-quote-section">
+            <h2>Kutipan Nakama Hari Ini 💬</h2>
+            <div id="quote-container">
+                <p>Tekan tombol untuk mengambil kutipan.</p>
+            </div>
+            <button id="fetch-quote-button">Ambil Kutipan Baru</button>
+        </section>
+    
+    </main> <footer>
+        <p>Created By Kusnanto
+            <img src="img/logo-perusahaan.png" alt="Logo Perusahaan S & C" class="footer-logo"></p>
+    </footer>
     <script src="js/script.js"></script>
 </body>
 </html>

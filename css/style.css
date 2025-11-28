@@ -331,3 +331,124 @@ footer {
         order: -1; /* Pindahkan info ke atas form di mobile (opsional, tapi sering dilakukan) */
     }
 }
+
+/* style.css */
+
+.todo-app-section {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.input-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#task-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#add-task-button {
+    padding: 10px 15px;
+    background-color: #ff5722; /* Warna khas One Piece */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#task-list {
+    list-style: none;
+    padding: 0;
+}
+
+#task-list li {
+    background-color: #f7f7f7;
+    padding: 12px;
+    margin-bottom: 8px;
+    border-left: 5px solid #ff5722;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.delete-button {
+    background-color: transparent;
+    color: #e74c3c;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* style.css - Tambahkan ini */
+
+.api-quote-section {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f0f8ff; /* Warna yang lebih cerah */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+#quote-container {
+    min-height: 80px; /* Menjaga kontainer tidak bergeser */
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    font-style: italic;
+    color: #333;
+}
+
+#quote-container small {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+#fetch-quote-button {
+    padding: 10px 20px;
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#fetch-quote-button:hover {
+    background-color: #34495e;
+}
+
+/* css/style.css - Pastikan kode ini sudah ada */
+
+/* css/style.css - Pastikan kode ini sudah ada dan tersimpan */
+
+.portofolio-grid {
+    /* MENGGUNAKAN !IMPORTANT UNTUK MEMASTIKAN INI DITERAPKAN */
+    display: grid !important; 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
+    gap: 30px; /* Jarak antar kolom */
+    margin-top: 30px;
+}
+
+.portofolio-item {
+    /* Styling kotak proyek */
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ... (Kode CSS Lainnya) ... */

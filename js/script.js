@@ -54,6 +54,136 @@ document.addEventListener('DOMContentLoaded', () => {
     setWelcomeMessage(userName);
 });
 
+// js/script.js - Revisi untuk mensimulasikan Server API
+
+// 1. Variabel Global dan Simulai Database (In-Memory Array)
+let tasks = [];
+let nextId = 1; // Untuk simulasi ID unik dari database
+
+// Mendapatkan referensi ke elemen HTML
+const taskList = document.getElementById('task-list');
+const taskInput = document.getElementById('task-input');
+const addTaskButton = document.getElementById('add-task-button');
+
+
+// --- FUNGSI SIMULASI API (Asynchronous) ---
+
+// 2. Simulasi GET Request (Load Tasks)
+function simulateFetchTasks() {
+    return new Promise(resolve => {
+        // Simulasikan delay jaringan 500ms
+        setTimeout(() => {
+            resolve(tasks); 
+        }, 500);
+    });
+}
+
+// 3. Simulasi POST Request (Add Task)
+function simulatePostTask(taskText) {
+    const newTask = { 
+        id: nextId++, 
+        text: taskText 
+    };
+    return new Promise(resolve => {
+        setTimeout(() => {
+            tasks.push(newTask);
+            resolve(newTask);
+        }, 500);
+    });
+}
+
+// 4. Simulasi DELETE Request (Delete Task)
+function simulateDeleteTask(idToDelete) {
+    return new Promise(resolve => {
+        setTimeout(() => {
+            tasks = tasks.filter(task => task.id !== idToDelete);
+            resolve(true);
+        }, 500);
+    });
+}
+
+
+// --- FUNGSI UTAMA DISPLAY (Render dan Interaksi) ---
+
+// 5. Render Tasks (Menampilkan data ke HTML)
+function renderTasks() {
+    taskList.innerHTML = ''; 
+
+    tasks.forEach(task => {
+        // Misi 1: Membuat elemen HTML baru (li, button) hanya dengan JavaScript
+        const listItem = document.createElement('li');
+        listItem.textContent = task.text;
+        
+        const deleteButton = document.createElement('button');
+        deleteButton.textContent = 'Hapus';
+        deleteButton.classList.add('delete-button');
+
+        // Menggunakan task.id, BUKAN index
+        deleteButton.addEventListener('click', () => handleDelete(task.id));
+
+        listItem.appendChild(deleteButton);
+        taskList.appendChild(listItem);
+    });
+}
+
+
+// 6. Handler Ambil Tugas (ASYNC)
+async function handleLoad() {
+    taskList.innerHTML = '<li>Memuat data dari server...</li>'; // Loading state
+    try {
+        const fetchedTasks = await simulateFetchTasks();
+        tasks = fetchedTasks;
+        renderTasks();
+    } catch (e) {
+        taskList.innerHTML = '<li>Gagal memuat data.</li>';
+    }
+}
+
+// 7. Handler Tambah Tugas (ASYNC)
+async function handleAdd() {
+    const taskText = taskInput.value.trim();
+
+    if (taskText !== '') {
+        // Nonaktifkan tombol saat loading
+        addTaskButton.disabled = true;
+        addTaskButton.textContent = 'Menyimpan...'; 
+        
+        await simulatePostTask(taskText); 
+        
+        // Aktifkan kembali
+        addTaskButton.disabled = false;
+        addTaskButton.textContent = 'Tambah Tugas'; 
+
+        taskInput.value = '';
+        renderTasks(); // Render setelah penambahan
+    } else {
+        alert('Tugas tidak boleh kosong!');
+    }
+}
+
+// 8. Handler Hapus Tugas (ASYNC)
+async function handleDelete(id) {
+    const listItem = event.target.closest('li');
+    listItem.style.opacity = 0.5; // Efek visual saat menghapus
+    
+    await simulateDeleteTask(id);
+    
+    renderTasks(); // Render setelah penghapusan
+}
+
+
+// --- TITIK AWAL APLIKASI (Initialization) ---
+handleLoad(); // Panggil handler load baru
+
+// Menambahkan event listener ke tombol utama
+addTaskButton.addEventListener('click', handleAdd);
+
+// Memungkinkan Enter Key di input
+taskInput.addEventListener('keypress', function (e) {
+    if (e.key === 'Enter') {
+        handleAdd();
+    }
+});
 // js/script.js (lanjutan)
 
 // 3. Fungsi untuk validasi form dan menampilkan hasilnya
@@ -118,3 +248,53 @@ document.addEventListener('DOMContentLoaded', () => {
         messageForm.addEventListener('submit', handleFormSubmission);
     }
 });
+
+// js/script.js - Tambahkan di bagian paling bawah.
+
+// Mendapatkan referensi elemen
+const quoteContainer = document.getElementById('quote-container');
+const fetchQuoteButton = document.getElementById('fetch-quote-button');
+const QUOTE_API_URL = './data/quote.json'; // API kutipan publik sederhana
+
+// --- FUNGSI UTAMA ASYNCHRONOUS ---
+
+async function fetchQuote() {
+    // 1. Tampilkan status loading
+    quoteContainer.innerHTML = '<p>Sedang memuat kutipan...</p>';
+
+    try {
+        // 2. Misi 2: Menggunakan 'await fetch()' untuk meminta data dari server
+        // 'await' akan menunggu sampai data benar-benar datang dari internet
+        const response = await fetch(QUOTE_API_URL); 
+
+        // 3. Memastikan respons berhasil (Kode status 200-299)
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+
+        // 4. Mengubah respons data menjadi format JSON
+        // Logika Baru: Mengambil Array data, lalu memilih 1 item secara acak
+const data = await response.json(); 
+        
+// Pilih kutipan acak dari Array data JSON lokal
+const randomIndex = Math.floor(Math.random() * data.length);
+const randomQuote = data[randomIndex]; // <-- Ambil objek kutipan
+
+// Tampilkan kutipan dalam Bahasa Indonesia
+quoteContainer.innerHTML = `
+    <p>"${randomQuote.quote}"</p>
+    <small>— ${randomQuote.author}</small>
+`;
+
+    } catch (error) {
+        // 6. Penanganan error jika koneksi gagal atau API bermasalah
+        console.error("Gagal mengambil kutipan:", error);
+        quoteContainer.innerHTML = '<p style="color: red;">Gagal mengambil kutipan. Cek koneksi internet Anda.</p>';
+    }
+}
+
+// Tambahkan event listener untuk tombol
+fetchQuoteButton.addEventListener('click', fetchQuote);
+
+// Ambil kutipan secara otomatis saat halaman pertama kali dimuat
+fetchQuote();
