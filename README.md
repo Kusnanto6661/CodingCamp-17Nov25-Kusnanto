@@ -53,3 +53,15 @@ Untuk menjalankan proyek ini di komputer Anda:
     Buka file `index.html` menggunakan VS Code Live Server atau cukup buka langsung di *browser* Anda.
 
 **Catatan:** Untuk menghindari masalah CORS saat menggunakan Fetch API (`quote.json`), disarankan menggunakan ekstensi Live Server di VS Code.
+
+## 🎓 Sertifikat Pendukung (Credibility)
+
+Untuk memperkuat kompetensi dalam proyek ini dan kesiapan memasuki dunia kerja, berikut adalah sertifikat pelatihan yang telah diselesaikan:
+
+1.  **Sertifikat Dicoding (Web Development)**
+    * **Deskripsi:**  Introduction to Financial Literacy
+    * **Link Download PDF:** Download PDF Sertifikat Dicoding (./certificates/sertifikat_dicoding.pdf)
+
+2.  **Introduction to Software Engineering**
+    * **Penyelenggara:** RevoU
+    * **Link Download PDF:** Download PDF Sertifikat Intro Software Engineering (./certificates/intro_software_engineering.pdf)
