@@ -11,7 +11,7 @@ Proyek ini dirancang agar siap dihubungkan ke Backend sesungguhnya (misalnya Nod
 
 | Kategori | Tautan |
 | :--- | :--- |
-| **Live Demo (GitHub Pages)** | **[KLIK UNTUK MELIHAT LIVE DEMO]([LINK GITHUB PAGES ANDA])** |
+| **Live Demo (GitHub Pages)** | https://kusnanto6661.github.io/CodingCamp-17Nov25-Kusnanto/ |
 | **Repository GitHub** | [https://github.com/Kusnanto6661/CodingCamp-17Nov25-Kusnanto](https://github.com/Kusnanto6661/CodingCamp-17Nov25-Kusnanto) |
 
 ## 🌟 Fitur Utama & Highlight Teknis
@@ -54,6 +54,7 @@ Untuk menjalankan proyek ini di komputer Anda:
 
 **Catatan:** Untuk menghindari masalah CORS saat menggunakan Fetch API (`quote.json`), disarankan menggunakan ekstensi Live Server di VS Code.
 
+
 ## 🎓 Sertifikat Pendukung (Credibility)
 
 Untuk memperkuat kompetensi dalam proyek ini dan kesiapan memasuki dunia kerja, berikut adalah sertifikat pelatihan yang telah diselesaikan:
@@ -65,3 +66,4 @@ Untuk memperkuat kompetensi dalam proyek ini dan kesiapan memasuki dunia kerja, 
 2.  **Introduction to Software Engineering**
     * **Penyelenggara:** RevoU
     * **Link Download PDF:** Download PDF Sertifikat Intro Software Engineering (./certificates/intro_software_engineering.pdf)
+
