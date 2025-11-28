@@ -53,3 +53,4 @@ Untuk menjalankan proyek ini di komputer Anda:
     Buka file `index.html` menggunakan VS Code Live Server atau cukup buka langsung di *browser* Anda.
 
 **Catatan:** Untuk menghindari masalah CORS saat menggunakan Fetch API (`quote.json`), disarankan menggunakan ekstensi Live Server di VS Code.
+
