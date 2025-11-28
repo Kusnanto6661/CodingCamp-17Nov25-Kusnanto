@@ -60,11 +60,10 @@ Untuk menjalankan proyek ini di komputer Anda:
 Untuk memperkuat kompetensi dalam proyek ini dan kesiapan memasuki dunia kerja, berikut adalah sertifikat pelatihan yang telah diselesaikan:
 
 1.  **Sertifikat Dicoding (Web Development)**
-    * **Deskripsi:** Introduction to Financial Literacy
-    * **Link Download PDF:** [Download PDF Sertifikat Dicoding](./certificates/sertifikat_dicoding.pdf)
+    ...
+    * **Link Download PDF:** [Download PDF Sertifikat Dicoding](./sertifikat_dicoding.pdf) 
     
 2.  **Introduction to Software Engineering**
-    * **Penyelenggara:** RevoU
-    * **Link Download PDF:** [Download PDF Sertifikat Intro Software Engineering](./certificates/intro_software_engineering.pdf)
-
+    ...
+    * **Link Download PDF:** [Download PDF Sertifikat Intro Software Engineering](./intro_software_engineering.pdf)
 
