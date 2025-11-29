@@ -61,9 +61,8 @@ Untuk memperkuat kompetensi dalam proyek ini dan kesiapan memasuki dunia kerja, 
 
 1.  **Sertifikat Dicoding (Web Development)**
     ...
-    * **Link Download PDF:** [Download PDF Sertifikat Dicoding](./sertifikat_dicoding.pdf) 
-    
+    * **Link Download PDF:** [Download PDF Sertifikat Dicoding] https://github.com/Kusnanto6661/CodingCamp-17Nov25-Kusnanto/blob/main/CodingCamp-17Nov25-Kusnantocertificatessertifikat_webdev.pdf/sertifikat_dicoding.pdf
 2.  **Introduction to Software Engineering**
     ...
-    * **Link Download PDF:** [Download PDF Sertifikat Intro Software Engineering](./intro_software_engineering.pdf)
+    * **Link Download PDF:** [Download PDF Sertifikat Intro Software Engineering] https://github.com/Kusnanto6661/CodingCamp-17Nov25-Kusnanto/blob/main/CodingCamp-17Nov25-Kusnantocertificatessertifikat_webdev.pdf/intro_software_engineering.pdf
 
