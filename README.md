@@ -66,3 +66,8 @@ Untuk memperkuat kompetensi dalam proyek ini dan kesiapan memasuki dunia kerja, 
     ...
     * **Link Download PDF:** [Download PDF Sertifikat Intro Software Engineering] https://github.com/Kusnanto6661/CodingCamp-17Nov25-Kusnanto/blob/main/CodingCamp-17Nov25-Kusnantocertificatessertifikat_webdev.pdf/intro_software_engineering.pdf
 
+## 📌 Kontak
+
+Jika Anda memiliki pertanyaan lebih lanjut, silakan hubungi saya melalui:
+
+* **Email:** kusnanto6661@gmail.com
